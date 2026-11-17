@@ -1,0 +1,24 @@
+resource_id,name,expected_status,expected_rule,expected_monthly_saving,why
+final-001,vol-rollback-3,confirm,R3-delete-volume,144.0,judge: replaced but still kept
+final-002,pay-mirror-eod,confirm,R5-rightsize,1120.0,judge: others depend on it
+final-003,prod-gpu-bench-on-demand,confirm,R1-rightsize,2600.0,judge: used sometimes
+final-004,snap-contract-88,confirm,R4-old-snapshot,118.0,judge: obligation
+final-005,dev-build-cache-2,confirm,R2-schedule,244.29,judge: others depend on it
+final-006,lb-entry-backup,confirm,R6-idle-lb,66.0,judge: safety backup
+final-007,stg-hack-aug,confirm,R5-rightsize,340.0,judge: unclear note
+final-008,vol-pilot-end,recommend,R3-delete-volume,77.0,judge: abandoned
+final-009,dev-gpu-demoday,recommend,R1-schedule,1735.71,judge: forgotten
+final-010,test-db-schema1,recommend,R2-schedule,578.57,judge: superseded
+final-011,snap-team-split,recommend,R4-old-snapshot,64.0,judge: nobody uses it
+final-012,lb-loadtest-1,recommend,R6-idle-lb,62.0,judge: temporary
+final-013,prod-old-search,recommend,R5-rightsize,400.0,judge: decommissioned
+final-014,prod-db-failover-pool,confirm,R5-rightsize,1500.0,protected tag failover
+final-015,prod-sync-weekly,confirm,R5-rightsize,210.0,keyword weekly
+final-016,dev-nobody-owns,confirm,R2-schedule,102.86,owner unknown
+final-017,snap-retain-old,confirm,R4-old-snapshot,49.0,keyword retain (known over-cautious limit)
+final-018,prod-db-core-5,recommend,R5-rightsize,820.0,oversized
+final-019,dev-runner-8,recommend,R2-schedule,250.71,always-on dev
+final-020,test-gpu-lab-12,recommend,R1-schedule,2121.43,schedule off
+final-021,vol-tmp-90,recommend,R3-delete-volume,57.0,unattached
+final-022,snap-ancient-4,recommend,R4-old-snapshot,41.0,old snapshot
+final-023,lb-dead-21,recommend,R6-idle-lb,73.0,idle lb

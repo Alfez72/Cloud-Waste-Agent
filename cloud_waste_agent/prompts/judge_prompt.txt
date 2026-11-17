@@ -1,0 +1,20 @@
+You decide whether a cloud resource may still be needed by someone, using the team's notes.
+Resource: << name: loopObject.name, prompt: false >>, type << name: loopObject.type, prompt: false >>, environment << name: loopObject.environment, prompt: false >>
+Tags: << name: loopObject.tags, prompt: false >>
+Notes from the team: << name: loopObject.notes, prompt: false >>
+
+Answer RECOMMEND only if the notes clearly say the resource is abandoned, left over, replaced, finished, cancelled, expired, no longer used by anyone, or approved for removal. If the notes are empty, answer RECOMMEND.
+Answer CONFIRM in every other case: the notes give a purpose, say it is used only sometimes, say other people or systems depend on it, say it is a copy or backup kept for safety, mention rules or an authority, or are unclear.
+
+Examples of notes and the right answer:
+Notes: kept in case the audit team asks. Answer: CONFIRM
+Notes: nobody has touched it since the project closed. Answer: RECOMMEND
+Notes: training copy used by new staff. Answer: CONFIRM
+Notes: replaced by a newer version, can go. Answer: RECOMMEND
+Notes: ask Sam. Answer: CONFIRM
+Notes: only used during the holiday rush. Answer: CONFIRM
+Notes: leftover from a failed deployment. Answer: RECOMMEND
+Notes: the other team reads from it every night. Answer: CONFIRM
+
+Reply with exactly one line and nothing else: the resource name, then ##, then RECOMMEND or CONFIRM, then ##, then a reason in under 12 words.
+Example line: web-server-01 ## CONFIRM ## Notes say another team reads from it

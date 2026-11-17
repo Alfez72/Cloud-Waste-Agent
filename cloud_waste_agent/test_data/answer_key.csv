@@ -1,0 +1,31 @@
+resource_id,name,expected_status,expected_rule,expected_monthly_saving,why
+res-001,snap-8507,recommend,R4-old-snapshot,54.2,"old snapshot, no retention"
+res-002,dev-gpu-exp-05,recommend,R1-schedule,4011.43,idle dev GPU running 24/7
+res-003,prod-vm-71,recommend,R5-rightsize,495.0,"oversized, one size down fits"
+res-004,lb-failover-eu,confirm,R6-idle-lb,88.0,decoy: failover tag
+res-008,snap-6897,recommend,R4-old-snapshot,38.75,"old snapshot, no retention"
+res-012,vol-orphan-543,recommend,R3-delete-volume,86.4,unattached volume
+res-014,prod-gpu-infer-21,recommend,R1-rightsize,3900.0,"idle prod GPU, half-size fits"
+res-017,lb-671,recommend,R6-idle-lb,73.0,no traffic
+res-022,test-database-75,recommend,R2-schedule,597.86,"always-on dev/test, low use"
+res-024,dev-gpu-exp-01,recommend,R1-schedule,1832.14,idle dev GPU running 24/7
+res-029,prod-vm-76,recommend,R5-rightsize,740.0,"oversized, one size down fits"
+res-030,vol-case-4471,confirm,R3-delete-volume,310.0,decoy: legal hold tag
+res-031,test-database-60,recommend,R2-schedule,777.86,"always-on dev/test, low use"
+res-032,dr-app-server-02,confirm,R5-rightsize,710.0,decoy: DR standby tag
+res-033,vol-orphan-133,recommend,R3-delete-volume,143.5,unattached volume
+res-037,snap-finance-archive-2024,confirm,R4-old-snapshot,96.4,decoy: note-only (audit hold)
+res-043,orders-db-replica-b,confirm,R5-rightsize,1240.0,decoy: note-only (standby replica)
+res-044,dev-gpu-exp-03,recommend,R1-schedule,6094.29,idle dev GPU running 24/7
+res-050,vol-unknown-7731,confirm,R3-delete-volume,175.0,decoy: owner unknown
+res-053,prod-gpu-train-nightly,confirm,R1-rightsize,7100.0,"decoy: nightly training, tag says scheduled"
+res-058,test-vm-13,recommend,R2-schedule,264.86,"always-on dev/test, low use"
+res-059,snap-8955,recommend,R4-old-snapshot,120.6,"old snapshot, no retention"
+res-061,vol-orphan-951,recommend,R3-delete-volume,212.0,unattached volume
+res-062,prod-gpu-infer-68,recommend,R1-rightsize,2650.0,"idle prod GPU, half-size fits"
+res-063,dev-gpu-exp-04,recommend,R1-schedule,1260.0,idle dev GPU running 24/7
+res-068,dev-gpu-exp-02,recommend,R1-schedule,2648.57,idle dev GPU running 24/7
+res-072,lb-885,recommend,R6-idle-lb,48.6,no traffic
+res-075,dev-vm-61,recommend,R2-schedule,442.29,"always-on dev/test, low use"
+res-079,stg-database-81,recommend,R5-rightsize,1320.0,"oversized, one size down fits"
+res-080,gpu-finetune-weekly,confirm,R1-rightsize,4550.0,decoy: note-only (weekly fine-tune)

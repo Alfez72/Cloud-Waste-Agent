@@ -1,0 +1,28 @@
+resource_id,name,expected_status,expected_rule,expected_monthly_saving,why
+fresh-001,vol-onboard-seed,confirm,R3-delete-volume,132.0,judge: shared reference copy
+fresh-002,prod-gpu-research-02,confirm,R1-rightsize,2400.0,judge: used only at certain times
+fresh-003,fin-reports-ro-03,confirm,R5-rightsize,980.0,judge: other team depends on it
+fresh-004,snap-tax-21,confirm,R4-old-snapshot,96.0,judge: regulator
+fresh-005,lb-region-b,confirm,R6-idle-lb,64.0,judge: failover purpose
+fresh-006,dev-wiki-02,confirm,R2-schedule,218.57,judge: others depend on it
+fresh-007,stg-batch-09,confirm,R5-rightsize,340.0,judge: unclear note
+fresh-008,vol-mig-leftover,recommend,R3-delete-volume,88.0,judge: leftover
+fresh-009,dev-gpu-intern-04,recommend,R1-schedule,1864.29,judge: abandoned
+fresh-010,test-db-old-07,recommend,R2-schedule,552.86,judge: replaced
+fresh-011,snap-proj-x,recommend,R4-old-snapshot,72.0,judge: cancelled project
+fresh-012,lb-trial-02,recommend,R6-idle-lb,69.0,judge: finished
+fresh-013,prod-api-legacy,recommend,R5-rightsize,380.0,judge: no longer used
+fresh-014,vol-approved-9,recommend,R3-delete-volume,54.0,judge: approved removal
+fresh-015,prod-gpu-old-render,recommend,R1-rightsize,3050.0,judge: no longer used
+fresh-016,prod-db-ops-11,recommend,R5-rightsize,750.0,oversized
+fresh-017,dev-ci-runner-3,recommend,R2-schedule,270.0,always-on dev
+fresh-018,stg-gpu-infer-02,recommend,R1-rightsize,1700.0,idle gpu rightsize
+fresh-019,vol-scratch-31,recommend,R3-delete-volume,61.0,unattached
+fresh-020,snap-old-77,recommend,R4-old-snapshot,38.0,old snapshot
+fresh-021,lb-old-55,recommend,R6-idle-lb,71.0,idle lb
+fresh-022,test-gpu-lab-09,recommend,R1-schedule,2185.71,schedule off
+fresh-023,dr-orders-eu,confirm,R5-rightsize,1550.0,protected tag dr-
+fresh-024,vol-audit-2026,confirm,R3-delete-volume,210.0,protected tag compliance
+fresh-025,dev-orphan-12,confirm,R2-schedule,96.43,owner unknown
+fresh-026,prod-report-monthly,confirm,R5-rightsize,330.0,keyword monthly
+fresh-027,snap-expired-12,confirm,R4-old-snapshot,58.0,keyword retention (known over-cautious limit)

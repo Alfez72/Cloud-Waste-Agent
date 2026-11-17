@@ -1,0 +1,19 @@
+resource_id,name,expected_status,expected_rule,expected_monthly_saving,why
+hold-002,prod-db-07,recommend,R5-rightsize,1450,oversized
+hold-003,lb-sale-17,confirm,R6-idle-lb,58.0,decoy note-only
+hold-005,orders-warm-copy-14,confirm,R5-rightsize,1650,decoy note-only
+hold-006,lb-12,recommend,R6-idle-lb,67.0,idle LB
+hold-007,dev-build-04,recommend,R2-schedule,360.0,always-on dev
+hold-011,vol-old-08,recommend,R3-delete-volume,164.0,unattached
+hold-012,dev-gpu-bench-01,recommend,R1-schedule,3342.86,idle dev GPU
+hold-013,stg-api-06,recommend,R5-rightsize,660,oversized
+hold-014,snap-11,recommend,R4-old-snapshot,44.0,"TRAP: truly waste, but the word retained triggers the keyword safety net, so the system will ask the owner (safe error)"
+hold-015,dev-license-18,confirm,R2-schedule,199.29,decoy note-only
+hold-016,prod-gpu-demo-13,confirm,R1-rightsize,3600,decoy note-only
+hold-020,test-gpu-lab-02,recommend,R1-schedule,1992.86,idle test GPU
+hold-024,vol-old-09,recommend,R3-delete-volume,92.0,unattached
+hold-027,snap-records-15,confirm,R4-old-snapshot,130.0,decoy note-only
+hold-030,vol-template-16,confirm,R3-delete-volume,75.0,decoy note-only
+hold-035,test-db-05,recommend,R2-schedule,630.0,always-on test db
+hold-036,prod-gpu-score-03,recommend,R1-rightsize,3200,idle prod GPU
+hold-039,snap-10,recommend,R4-old-snapshot,61.0,old snapshot
